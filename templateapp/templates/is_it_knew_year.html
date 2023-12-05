@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href=>
+    <script src="{% static 'script/main.js' %}"></script>
+</head>
+<body>
+{% if result %}
+    <h1>TAK</h1>
+{% else %}
+    <h1>NIE</h1>
+    <img src="{% static 'img/happy.avif' %}">
+{% endif %}
+</body>
+</html>
